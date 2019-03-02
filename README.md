@@ -16,6 +16,8 @@ $params["file_name"] = "preferences"; // File name of the preference file.
 $this->load->splint("francis94c/ci-preference", "+CIPreferences", $params, "alias");
 $this->alias->get("key", "defaultVal");
 $this->alias->set("key", "val");
+$this->alias->increment("key1", 5) // Increments 'key1' by 5.
+$this->alias->increment("key1") // increments 'key1' by 1.
+$this->alias->concat("key2", "A") // Concatenates 'A' to 'key2'.
 $this->alias->commit(); // Commits all values to file.
 ```
-
